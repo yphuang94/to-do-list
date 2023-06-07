@@ -1,15 +1,30 @@
-#body-container {
+body {
+    background: linear-gradient(to right, #e22865, #37adcd);
+}
+
+#header-container {
     width: 100vw;
+    height: 20vh;
+    border: 1px solid black;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#header-container, #list-container, #input-container {
-    width: 33%;
-    height: 100vh;
-    border: 1px dashed black;
+#title-container {
+    height: 100%;
+    width: 40%;
 }
 
-#userInput {
-    width: 80%;
-    margin: auto;
+#input-container {
+    width: 60%;
 }
+
+#list-container {
+    width: 100vw;
+    height: 80vh;
+    border: 1px solid black;
+}
+
+
+
