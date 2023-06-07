@@ -1,0 +1,15 @@
+#body-container {
+    width: 100vw;
+    display: flex;
+}
+
+#header-container, #list-container, #input-container {
+    width: 33%;
+    height: 100vh;
+    border: 1px dashed black;
+}
+
+#userInput {
+    width: 80%;
+    margin: auto;
+}
