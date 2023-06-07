@@ -13,10 +13,26 @@
         <div id="list-container"></div>
         <div id="input-container">
             <input type="text" id="userInput">
-            <button>Submit</button>
+            <button id="submitButton">Submit</button>
         </div>
     </div>
     
+    <script>
+        let submit = document.getElementById("submitButton");
+        let list = document.getElementById("list-container");
+        let userInput = document.getElementById("userInput");
+
+        submit.addEventListener("click", createItem => {
+            if (userInput.value != "") {
+                let newItem = document.createElement("p");
+                list.appendChild(newItem);
+                newItem.innerHTML = userInput.value;
+                userInput.value = "";
+            }
+            
+        });
+
+    </script>
     
 </body>
 </html>
