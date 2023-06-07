@@ -25,9 +25,16 @@
         submit.addEventListener("click", createItem => {
             if (userInput.value != "") {
                 let newItem = document.createElement("p");
+
+                let completeButton = document.createElement("button");
+                let deleteButton = document.createElement("button");
+
                 list.appendChild(newItem);
                 newItem.innerHTML = userInput.value;
                 userInput.value = "";
+                
+                newItem.appendChild(completeButton);
+                newItem.appendChild(deleteButton);
             }
             
         });
