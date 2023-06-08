@@ -29,15 +29,19 @@
         let listParent = document.getElementById("list-container");
 
         submit.addEventListener("click", createCard => {
-            let newItem = document.createElement("div");
+            let newItem = document.createElement("div"); //user's input
             newItem.innerHTML = input.value;
             listParent.appendChild(newItem);
 
-            let checkBox = document.createElement("i");
+            let checkBox = document.createElement("i"); //checkbox icon
             checkBox.className = "fa-regular fa-square-check";
             newItem.appendChild(checkBox);
 
-            input.value = "";
+            let trashcan = document.createElement("i"); //trashcan icon
+            trashcan.className = "fa-solid fa-trash-can";
+            newItem.appendChild(trashcan);
+
+            input.value = ""; //reset input form
         })
 
     </script>
