@@ -29,6 +29,7 @@
         submit.addEventListener("click", createCard => {
             let newItem = document.createElement("div"); //user's input
             newItem.innerHTML = input.value;
+            newItem.style.fontWeight = "700";
             newItem.className = "new-item"
             listParent.appendChild(newItem);
 
@@ -50,8 +51,8 @@
             })
 
             checkBox.addEventListener("click", check => {
-                checkBox.style.backgroundColor = "#D6F599";
                 newItem.style.textDecorationLine = "line-through";
+                newItem.style.color = "#2A7F62";
             })
         })
 
