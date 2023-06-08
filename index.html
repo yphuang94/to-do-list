@@ -11,9 +11,7 @@
 <body>
     <div id="body-container">
         <div id="header-container">
-            <div id="title-container">
-                <h1>To-Do List</h1>
-            </div>
+            <h1>To-Do List</h1>
             <div id="input-container">
                 <input type="text" id="input"><button id="submit">Submit</button>
             </div>
@@ -31,15 +29,19 @@
         submit.addEventListener("click", createCard => {
             let newItem = document.createElement("div"); //user's input
             newItem.innerHTML = input.value;
+            newItem.className = "new-item"
             listParent.appendChild(newItem);
+
+            let iconContainer = document.createElement("div");
+            newItem.appendChild(iconContainer);
 
             let checkBox = document.createElement("i"); //checkbox icon
             checkBox.className = "fa-regular fa-square-check";
-            newItem.appendChild(checkBox);
+            iconContainer.appendChild(checkBox);
 
             let trashcan = document.createElement("i"); //trashcan icon
             trashcan.className = "fa-solid fa-trash-can";
-            newItem.appendChild(trashcan);
+            iconContainer.appendChild(trashcan);
 
             input.value = ""; //reset input form
         })
