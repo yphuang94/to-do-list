@@ -23,6 +23,7 @@
     </div>
     
     <script>
+
         let input = document.getElementById("input");
         let submit = document.getElementById("submit");
         let listParent = document.getElementById("list-container");
@@ -31,9 +32,13 @@
             let newItem = document.createElement("div");
             newItem.innerHTML = input.value;
             listParent.appendChild(newItem);
+
+            let checkBox = document.createElement("i");
+            checkBox.className = "fa-regular fa-square-check";
+            newItem.appendChild(checkBox);
+
             input.value = "";
         })
-
 
     </script>
     
