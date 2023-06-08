@@ -32,7 +32,7 @@
             newItem.className = "new-item"
             listParent.appendChild(newItem);
 
-            let iconContainer = document.createElement("div");
+            let iconContainer = document.createElement("div"); //icon container
             newItem.appendChild(iconContainer);
 
             let checkBox = document.createElement("i"); //checkbox icon
@@ -44,6 +44,10 @@
             iconContainer.appendChild(trashcan);
 
             input.value = ""; //reset input form
+
+            trashcan.addEventListener("click", deleteCard => {
+                iconContainer.parentElement.remove() //iconContainer's parent is the card element
+            })
         })
 
     </script>
