@@ -5,7 +5,6 @@ body {
 #header-container {
     width: 100vw;
     height: 20vh;
-    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,17 +12,25 @@ body {
 
 #title-container {
     height: 100%;
-    width: 40%;
+    width: 30%;
 }
 
 #input-container {
-    width: 60%;
+    width: 70%;
 }
 
 #list-container {
     width: 100vw;
     height: 80vh;
     border: 1px solid black;
+}
+
+#input {
+    width: 40%;
+}
+
+#submit {
+
 }
 
 
